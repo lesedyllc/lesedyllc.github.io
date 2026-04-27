@@ -40,19 +40,114 @@
   <section id="home" class="hero">
     <div class="hero-glow"></div>
     <div class="container hero-body">
-      <img src="assets/logo.svg" alt="LESEDY LLC" class="hero-logo" />
-      <p class="hero-eyebrow">Pharmaceutical Data Science</p>
-      <h1>Turning Complex Pharma Data<br />Into <em>Clear Decisions</em></h1>
-      <p class="hero-lead">
-        LESEDY LLC helps small to mid-sized pharmaceutical companies harness the full power of their
-        data — through expert analysis, predictive modeling, machine learning, and visualization —
-        so every decision is grounded in evidence.
-      </p>
-      <div class="hero-btns">
-        <a href="#services" class="btn btn-primary">Explore Our Services</a>
-        <a href="#contact" class="btn btn-outline">Schedule a Consultation</a>
+
+      <!-- LEFT -->
+      <div class="hero-left">
+        <img src="assets/logo.svg" alt="LESEDY LLC" class="hero-logo" />
+        <p class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Pharmaceutical Data Science
+        </p>
+        <h1>Turning Complex Pharma Data Into <em>Clear Decisions</em></h1>
+        <p class="hero-lead">
+          LESEDY LLC helps small to mid-sized pharmaceutical companies harness the full power
+          of their data — through expert analysis, predictive modeling, machine learning, and
+          visualization — so every decision is grounded in evidence.
+        </p>
+        <div class="hero-btns">
+          <a href="#services" class="btn btn-primary">Explore Our Services</a>
+          <a href="#contact" class="btn btn-outline">Schedule a Consultation</a>
+        </div>
       </div>
-    </div>
+
+      <!-- RIGHT — analytics dashboard mockup -->
+      <div class="hero-right">
+        <div class="dash-card">
+          <div class="dash-titlebar">
+            <div class="dot-r"></div><div class="dot-y"></div><div class="dot-g"></div>
+            <span class="dash-title-text">Clinical Trial Analytics</span>
+          </div>
+          <div class="dash-kpis">
+            <div class="kpi">
+              <span class="kpi-label">Trial Efficiency</span>
+              <span class="kpi-val up">+34%</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label">Cost Savings</span>
+              <span class="kpi-val up">$2.4M</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label">Time to Market</span>
+              <span class="kpi-val down">&minus;18%</span>
+            </div>
+          </div>
+          <div class="dash-chart-area">
+            <svg viewBox="0 0 340 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0" y1="28" x2="340" y2="28" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4 3"/>
+              <line x1="0" y1="56" x2="340" y2="56" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4 3"/>
+              <line x1="0" y1="84" x2="340" y2="84" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4 3"/>
+              <path d="M0 96 L50 80 L95 68 L140 48 L185 54 L225 32 L270 20 L310 12 L340 6 L340 110 L0 110Z" fill="url(#heroGrad)" opacity=".35"/>
+              <path d="M0 96 L50 80 L95 68 L140 48 L185 54 L225 32 L270 20 L310 12 L340 6" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0 104 L50 92 L95 86 L140 72 L185 76 L225 60 L270 50 L310 44 L340 38" stroke="#0891B2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 3" opacity=".7"/>
+              <circle cx="225" cy="32" r="4" fill="#1D4ED8"/>
+              <circle cx="310" cy="12" r="4" fill="#1D4ED8"/>
+              <circle cx="340" cy="6"  r="4" fill="#1D4ED8"/>
+              <defs>
+                <linearGradient id="heroGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%"   stop-color="#1D4ED8" stop-opacity=".6"/>
+                  <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="dash-bars">
+            <div class="dbar-row">
+              <span class="dbar-lbl">Q1</span>
+              <div class="dbar-track"><div class="dbar-fill" style="width:45%"></div></div>
+              <span class="dbar-pct">45%</span>
+            </div>
+            <div class="dbar-row">
+              <span class="dbar-lbl">Q2</span>
+              <div class="dbar-track"><div class="dbar-fill" style="width:63%"></div></div>
+              <span class="dbar-pct">63%</span>
+            </div>
+            <div class="dbar-row">
+              <span class="dbar-lbl">Q3</span>
+              <div class="dbar-track"><div class="dbar-fill" style="width:79%"></div></div>
+              <span class="dbar-pct">79%</span>
+            </div>
+            <div class="dbar-row">
+              <span class="dbar-lbl">Q4</span>
+              <div class="dbar-track"><div class="dbar-fill hi" style="width:93%"></div></div>
+              <span class="dbar-pct">93%</span>
+            </div>
+          </div>
+          <div class="dash-pills">
+            <span>ML Model Active</span>
+            <span>Real-time</span>
+            <span>FDA Ready</span>
+          </div>
+        </div>
+
+        <!-- Floating chips -->
+        <div class="float-chip float-chip-1">
+          <span class="chip-icon">&#x2197;&#xfe0f;</span>
+          <div>
+            <div class="chip-val">98.6%</div>
+            <div class="chip-sub">Model Accuracy</div>
+          </div>
+        </div>
+        <div class="float-chip float-chip-2">
+          <span class="chip-icon">&#x26a1;</span>
+          <div>
+            <div class="chip-val">Live</div>
+            <div class="chip-sub">ML Pipeline</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /hero-body -->
+
     <div class="hero-stats-bar">
       <div class="container stats-inner">
         <div class="stat-item">
